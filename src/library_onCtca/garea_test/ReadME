@@ -1,0 +1,32 @@
+主な関数
+void garea_create(int num_gareas, int *gareaid)
+説明: windowを作成し、windowの番号をポインタを利用したgareaidで返す
+
+void garea_attach(int gareaid, void *base,int size_byte)
+説明:gareaidのwindowへbaseメモリを結びつける
+
+void garea_read(int gareaid, int target_world_rank, size_t offset, size_t size, void *dest_addr, int type)
+説明:gareaidのwindowからデータを片側通信で読み出す
+
+void garea_write(int gareaid, int target_world_rank, size_t offset, size_t size, void *src_addr, int type)
+説明:gareaidのwindowからデータを片側通信で書き込む
+
+void garea_detach(int gareaid, void *base)
+説明:gareaidのwindowからbaseメモリを分離する
+
+void garea_delete()
+説明:全てのwindowやメモリを解放する
+
+
+サンプルプログラムの実行方法
+1. Makefileのファイルでcotocoaのパスを自身のものにする
+2. jobを投げ、結果を確認する
+
+サンプルプログラム
+(例) コード群: 説明
+requester.c coupler.c worker1.c run.sh: 既存のCoToCoAとgareaを組み合わせたサンプルプログラム
+requester_garea_read.c coupler_garea_read.c worker1_garea_read.c garea_read_test.sh:  gareaidを複数利用できることをテスト。requeserとworkerからgarea_readの実行をテスト
+requester_garea_write.c coupler_garea_write.c worker1_garea_write.c garea_write_test.sh: workerからgarea_writeの実行をテスト
+
+
+
