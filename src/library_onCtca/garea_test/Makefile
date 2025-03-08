@@ -1,4 +1,4 @@
-PREFIX=/home/pj24001725/ku40000080/test/cotocoa
+PREFIX=../cotocoa
 CC=mpicc
 NC=nvcc -ccbin g++
 CFLAGS=-I${PREFIX}/include

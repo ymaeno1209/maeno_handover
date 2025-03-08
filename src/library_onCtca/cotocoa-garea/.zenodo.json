@@ -1,0 +1,20 @@
+{
+    "description": "Code-To-Code Adapter", 
+    "license": "other-open", 
+    "title": "tnanri/cotocoa: CoToCoA version 1.2.2", 
+    "version": "v1.2.2", 
+    "upload_type": "software", 
+    "creators": [
+        {
+            "name": "Takeshi Nanri"
+        }
+    ], 
+    "access_right": "open", 
+    "related_identifiers": [
+        {
+            "scheme": "url", 
+            "identifier": "https://github.com/tnanri/cotocoa/tree/v1.2.2", 
+            "relation": "isSupplementTo"
+        }
+    ]
+}

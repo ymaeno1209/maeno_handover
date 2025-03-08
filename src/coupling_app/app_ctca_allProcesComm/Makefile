@@ -1,4 +1,4 @@
-PREFIX=/home/pj24001725/ku40000080/cotocoa-garea-bcast-pattern
+PREFIX=../../library_onCtca/cotocoa-garea
 CC=mpicc
 NC=nvcc -ccbin g++
 CFLAGS=-I${PREFIX}/include
