@@ -55,3 +55,5 @@ dkms.conf
 *.out
 *.csv
 *.png
+
+.vscode
