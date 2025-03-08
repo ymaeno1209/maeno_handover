@@ -8,3 +8,9 @@ coupling_appでは、拡散現象シミュレーションプログラムと画�
 - app_fileIO：ファイルを用いて連成計算を行う
 - app_gbuffer：本研究で実装したバッファインターフェースを用いて連成計算を行う
 - app_sendRecv：Send/Recvを用いて連成計算を行う
+
+### プログラムの実行方法
+1. module load gcc/8 hpcx/2.17.1 cuda/12.2.2
+2. make clean
+3. make -j 
+4. ジョブを投げる
